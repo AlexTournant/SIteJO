@@ -8,12 +8,19 @@
 <ul>
     @foreach($sports as $sport)
         <li>{{$sport['id']}}
+            <br>
             {{$sport['nom']}}
+            <br>
             {{$sport['description']}}
+            <br>
             {{$sport['annee_ajout']}}
-            {{$sport['nb_discipline']}}
+            <br>
+            {{$sport['nb_disciplines']}}
+            <br>
             {{$sport['nb_epreuves']}}
-            {{$sport['daye_debut']}}
+            <br>
+            {{$sport['date_debut']}}
+            <br>
             {{$sport['date_fin']}}
         </li>
     @endforeach

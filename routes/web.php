@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SportController;
 use App\Models\Sport;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sport',[Sport::class,'']);
+Route::get('/sports',[SportController::class,"index"]);

@@ -24,14 +24,13 @@ class SportFactory extends Factory
             $interval = '+ 180 days',
         );
         return [
-            'id' => $this->faker->randomDigitNotNull,
-            'nom' => $this->faker->randomElement($array = array('Urgent', 'A Faire', 'Optionnel')),
+            'nom' => $this->faker->randomElement($array = array('Foot', 'Patinage artistique', 'golf','natation')),
             'description' => $this->faker->paragraph,
-            'annee_ajout' => $this->faker->randomElement($array = array(true, false)),
-            'nb_discipline' => $this->faker->randomDigitNotNull,
+            'annee_ajout' => $this->faker->date('Y'),
+            'nb_disciplines' => $this->faker->randomDigitNotNull,
             'nb_epreuves' => $this->faker->randomDigitNotNull,
-            'nb_epreuves' => $this->faker->randomDigitNotNull
-
+            'date_debut' => $this->faker->date(),
+            'date_fin' => $this->faker->date()
         ];
 
     }
