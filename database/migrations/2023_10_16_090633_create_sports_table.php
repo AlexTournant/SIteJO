@@ -20,6 +20,8 @@ return new class extends Migration
             $table->integer('nb_epreuves');
             $table->date('date_debut');
             $table->date('date_fin');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

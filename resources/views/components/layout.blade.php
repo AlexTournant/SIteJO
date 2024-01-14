@@ -18,6 +18,8 @@
 </main>
 <aside>
     Explications
+    <br>
+    Les Jeux Olympiques et Paralympiques sont le plus grand événement sportif mondial. Le tour est venu pour Paris d’accueillir le monde et de célébrer les valeurs olympiques et paralympiques.
 </aside>
 <footer>
     <x-footer></x-footer>
