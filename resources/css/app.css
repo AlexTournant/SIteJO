@@ -1,0 +1,128 @@
+img{
+    width: 60%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #343a40;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 300px 1fr 200px;
+    grid-template-rows: 80px 1fr 80px;
+}
+
+/** Le menu est dans une grille, il occupe toute une ligne */
+menu {
+    background-color: #69db7c;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 0 40px;
+}
+menu button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #37b24d;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+menu .a-droite {
+    flex: 1 1 auto;
+}
+
+menu button a:any-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+menu button a:any-link {
+    /*color: #1098ad;*/
+    color: #1179bb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+menu button a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+menu button a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #37b24d;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+button:last-child {
+    background-color: #d6336c;
+    margin-left: auto;
+}
+
+button.update{
+    background-color: cornflowerblue;
+}
+main {
+    grid-column: 1 / 3;
+    overflow: scroll;
+
+}
+
+aside {
+    grid-column: 3 / -1;
+    background-color: #e9ecef;
+    text-align: center;
+
+}
+
+footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    /* color: #777; */
+    color: antiquewhite;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+

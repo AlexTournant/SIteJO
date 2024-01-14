@@ -4,9 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use JsonSerializable;
 
-class Sport extends Model {
+class Sport extends Model
+{
     use HasFactory;
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function athletes()
+    {
+        return $this->belongsToMany(Athlete::class,'classements')->withPivot("rang", "performance");
+    }
 }

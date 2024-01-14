@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Sport;
+use App\Models\User;
 use DateTime;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -19,10 +20,7 @@ class SportFactory extends Factory
      */
     public function definition()
     {
-        $createAt = $this->faker->dateTimeInInterval(
-            $startDate = '-6 months',
-            $interval = '+ 180 days',
-        );
+        $users_id = User::all()->pluck('id');
         return [
             'nom' => $this->faker->randomElement($array = array('Foot', 'Patinage artistique', 'golf','natation')),
             'description' => $this->faker->paragraph,
@@ -30,7 +28,8 @@ class SportFactory extends Factory
             'nb_disciplines' => $this->faker->randomDigitNotNull,
             'nb_epreuves' => $this->faker->randomDigitNotNull,
             'date_debut' => $this->faker->date(),
-            'date_fin' => $this->faker->date()
+            'date_fin' => $this->faker->date(),
+            'user_id' => $this->faker->randomElement($users_id),
         ];
 
     }

@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <title>Liste des Sports</title>
-</head>
-<body>
-<p>la liste des Sports</p>
+<x-layout>
+<h1>{{$titre}}</h1>
 <ul>
     @foreach($sports as $sport)
-        <li>{{$sport['id']}}
-            <br>
+        <li class="grid_container">
+            {{$sport['id']}}
             {{$sport['nom']}}
-            <br>
             {{$sport['description']}}
-            <br>
             {{$sport['annee_ajout']}}
-            <br>
             {{$sport['nb_disciplines']}}
-            <br>
             {{$sport['nb_epreuves']}}
-            <br>
             {{$sport['date_debut']}}
-            <br>
             {{$sport['date_fin']}}
+            <button><a href="{{route('sports.show',[$sport['id']])}}">Afficher</a></button>
+            @can('update',$sport)
+            <button class="update"><a href="{{route('sports.edit',[$sport->id])}}"> Update</a></button>
+            @endcan
+            @can('delete',$sport)
+            <button><a href="{{route('sports.destroy',[$sport->id,'action'=>'delete'])}}"> Delete</a></button>
+            @endcan
         </li>
     @endforeach
+    @auth()
+    <button><a href="{{route('sports.create')}}">Ajouter un sport</a></button>
+        @endauth
 </ul>
-</body>
+</x-layout>
