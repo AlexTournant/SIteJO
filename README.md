@@ -44,7 +44,7 @@ MAIL_ENCRYPTION=tls
 
 Pour vous connecter en tant qu'admin appuyer sur connecter et entrer les valeurs suivantes :
 
-*email : robert.duchmol@gmail.com
+* email : robert.duchmol@gmail.com
 
-*mot de passe : GrosSecret
+* mot de passe : GrosSecret
     
