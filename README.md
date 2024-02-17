@@ -20,7 +20,7 @@ npm run dev
 ```
 # Important 
 
-pour pouvoir utiliser l'application vous devrez vous faire un compte mailtrap et changer dans le fichier .env 
+Pour pouvoir utiliser l'application vous devrez vous faire un compte mailtrap et changer dans le fichier .env 
 
 1.Création d’un compte
 ![image.png](./resources/images/connexionMailtrap.png)
