@@ -1,9 +1,9 @@
 ### Site Web Jeux Olympiques
 
 Projet Universitaire : Dans le cadre d'un projet à faire dans une matière .J'ai pu réaliser une application en Php/laravel avec de nouvelles fonctionnalités jamais vues auparavant comme :
-    - Le changement de mot de passe via un envoie de mail ( utilisation de mailtrap)
-    - La gestion de role pour un utilisateur 
-    - Verification d'authentification via une adresse mail ( utilisation de mailtrap)
+- Le changement de mot de passe via un envoie de mail ( utilisation de mailtrap)
+- La gestion de role pour un utilisateur 
+- Verification d'authentification via une adresse mail ( utilisation de mailtrap)
 
 ### Comment lancer l'application 
 
