@@ -23,10 +23,10 @@ npm run dev
 pour pouvoir utiliser l'application vous devrez vous faire un compte mailtrap et changer dans le fichier .env 
 
 1.Création d’un compte
-![image.png](./resources/images/connecteMailtrap.png)
+![image.png](./resources/images/connexionMailtrap.png)
 
 2.Configuration d’une adresse
-![image.png](./resources/images/connexionMailtrap.png)
+![image.png](./resources/images/connecteMailtrap.png)
 
 3.Identifiant de l’adresse
 ![image.png](./resources/images/infoAdresseMailtrap.png)
